@@ -1,0 +1,29 @@
+From a71803eaa4a2b4894174a0b42b44161036d8f5b1 Mon Sep 17 00:00:00 2001
+From: schwienernitzel <pfelix0803@gmail.com>
+Date: Tue, 24 Dec 2024 11:45:43 +0000
+Subject: [PATCH] TWRP: Only refer to TW_MAIN_VERSION_STR
+
+Change-Id: I2533bfdb42fa28948b846d31b0c9a321f277a74a
+Signed-off-by: schwienernitzel <pfelix0803@gmail.com>
+---
+ variables.h | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/variables.h b/variables.h
+index af7f069..8d90349 100644
+--- a/variables.h
++++ b/variables.h
+@@ -17,8 +17,8 @@
+ #ifndef _VARIABLES_HEADER_
+ #define _VARIABLES_HEADER_
+ 
+-#define TW_MAIN_VERSION_STR       "3.7.0_9"
+-#define TW_VERSION_STR TW_MAIN_VERSION_STR TW_DEVICE_VERSION
++#define TW_MAIN_VERSION_STR       "3.7.0"
++#define TW_VERSION_STR TW_MAIN_VERSION_STR
+ #define TW_SETTINGS_FILE            ".twrps"
+ #define TW_RECOVERY_NAME            "TWRP"
+ #define TW_DEFAULT_RECOVERY_FOLDER  "/" TW_RECOVERY_NAME
+-- 
+2.25.1
+
